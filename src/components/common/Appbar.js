@@ -5,7 +5,6 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import '../../assets/styles/Search.css'
 import { NavLink } from 'react-router-dom';
-import { GoSearch } from 'react-icons/go';
 import Login from './Login';
 import Register from './Register';
 import CartBtn from './CartBtn';
