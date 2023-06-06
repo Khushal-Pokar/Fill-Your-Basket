@@ -31,7 +31,13 @@ const Cart = () => {
             </div>
             <div className="col-md-4">
               <h3>{cartItem.title}</h3>
-              <p className="lead fw-bold">${cartItem.price}</p>
+              <p className="lead fw-bold">
+                $
+                {(
+                  cartItem.price -
+                  (cartItem.price * cartItem.discountPercentage) / 100
+                ).toFixed(2)}
+              </p>
             </div>
           </div>
         </div>
@@ -42,9 +48,12 @@ const Cart = () => {
   const emptyCart = () => {
     return (
       <div className="px-4 my-5 bg-light rounded-3 py-5">
-        <div className="container py-4 mt-3 d-flex justify-content-center">
+        <div className="container py-4 mt-3 d-flex flex-column align-items-center">
           <div className="row">
             <h3>Your Cart is Empty</h3>
+          </div>
+          <div className="row mt-4">
+            <span><NavLink to="/"><Button variant="dark">Go to Home</Button></NavLink></span>
           </div>
         </div>
       </div>
