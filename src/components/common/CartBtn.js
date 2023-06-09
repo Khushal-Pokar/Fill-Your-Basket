@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import Badge from 'react-bootstrap/Badge';
-import { TbShoppingCart } from 'react-icons/tb';
+import { RiShoppingBasketFill } from 'react-icons/ri';
 import Button from 'react-bootstrap/Button';
 
 const CartBtn = () => {
@@ -13,8 +13,8 @@ const CartBtn = () => {
       <>
         <NavLink to="/cart">
           <Button variant="light" className="me-2">
-            <TbShoppingCart />
-            Cart <Badge bg="secondary">{state.length}</Badge>
+            <RiShoppingBasketFill />
+            Basket <Badge bg="secondary">{state.length}</Badge>
           </Button>
         </NavLink>
       </>
