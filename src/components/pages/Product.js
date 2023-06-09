@@ -105,11 +105,11 @@ const Product = () => {
               </h4>
               <p className="lead mt-4">{product.description}</p>
               <Button variant="outline-dark" className="my-4" onClick={()=>addProduct(product)}>
-                Add to Cart
+                Add to Basket
               </Button>
               <NavLink to='/cart'>
               <Button variant="dark" className="m-4">
-                Go to Cart
+                Go to Basket
               </Button>
               </NavLink>
             </Col>
