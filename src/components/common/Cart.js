@@ -20,7 +20,7 @@ const Cart = () => {
             onClick={() => handleClose(cartItem)}
             variant="outline-dark"
             className="float-end"
-          >Remove from Cart</Button>
+          >Remove from Basket</Button>
           <div className="row justify-content-center">
             <div className="col-md-4">
               <img
@@ -51,7 +51,7 @@ const Cart = () => {
       <div className="px-4 my-5 bg-light rounded-3 py-5">
         <div className="container py-4 mt-3 d-flex flex-column align-items-center">
           <div className="row">
-            <h3>Your Cart is Empty</h3>
+            <h3>Your Basket is Empty</h3>
           </div>
           <div className="row mt-4">
             <span><NavLink to="/"><Button variant="dark">Go to Home</Button></NavLink></span>
