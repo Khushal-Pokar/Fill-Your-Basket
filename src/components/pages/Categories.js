@@ -101,16 +101,27 @@ const Categories = () => {
                               />
                             </div>
                             <div className="card-body">
-                              <h3 className="card-title h-50">{element.title}</h3>
+                              <h3 className="card-title h-50">
+                                {element.title}
+                              </h3>
                               {/* <p className="card-text">
                                 Ratings: {element.rating}/5
                               </p> */}
                               <br />
-                              <h4 className="card-text">$ {element.price}.00</h4>
+                              <h4 className="card-text">
+                                $
+                                {(
+                                  element.price -
+                                  (element.price * element.discountPercentage) /
+                                    100
+                                ).toFixed(2)}
+                              </h4>
                             </div>
                             <div className="card-footer bg-transparent">
                               <Button variant="lg light">
-                                <NavLink to={`product/${element.id}`}><Button variant="dark">Buy Now</Button></NavLink>
+                                <NavLink to={`product/${element.id}`}>
+                                  <Button variant="dark">Buy Now</Button>
+                                </NavLink>
                               </Button>
                             </div>
                           </Card>
