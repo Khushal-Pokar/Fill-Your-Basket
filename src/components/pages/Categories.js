@@ -101,7 +101,7 @@ const Categories = () => {
                               />
                             </div>
                             <div className="card-body">
-                              <h3 className="card-title h-50">
+                              <h3 className="card-title h-50" style={{textTransform:"capitalize"}}>
                                 {element.title}
                               </h3>
                               {/* <p className="card-text">
