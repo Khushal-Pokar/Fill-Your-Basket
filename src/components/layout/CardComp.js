@@ -29,7 +29,7 @@ const CardComp = () => {
                         <CardImg src={element.thumbnail} />
                       </div>
                       <div className='card-body'>
-                        <h3 className='card-title h-50'>{element.title}</h3>
+                        <h3 className='card-title h-50' style={{textTransform:"capitalize"}}>{element.title}</h3>
                         {/* <p className='card-text'>Ratings: {element.rating}/5</p> */}
                         <br />
                         <h4 className='card-text'>
