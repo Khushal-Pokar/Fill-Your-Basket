@@ -13,7 +13,7 @@ const Home = () => {
         <CaraouselComp />
       </Row>
       <Row className='mt-4'>
-        <h2>Best Sellling Smartphones</h2>
+        <h2>Trending Beauty Products</h2>
         <hr />
         <CardComp />
       </Row>
