@@ -71,18 +71,16 @@ const Categories = () => {
                       className="w-100 mb-2"
                       onClick={() =>
                         setUrl(
-                          `https://dummyjson.com/products/category/${category}`
+                          category.url
                         )
                       }
                     >
-                      {category}
+                      {category.name}
                     </Button>
                   );
                 })}
-                {/* <Button variant='dark' className='m-2' onClick={()=>filterProducts('motorcycle')}>motorcycle</Button> */}
               </Col>
               <Col md={9}>
-                {/* <h3>Browsing {products[0].category}</h3> */}
                 {loading ? (
                   <Loading />
                 ) : (
@@ -92,7 +90,6 @@ const Categories = () => {
                         <Col md={4} className="mt-4" key={element.id}>
                           <Card className="text-center h-100">
                             <div className="d-flex align-content-center">
-                              {/* <CardImg src={element.thumbnail} /> */}
                               <img
                                 src={element.thumbnail}
                                 class="card-img-top"
@@ -104,9 +101,6 @@ const Categories = () => {
                               <h3 className="card-title h-50" style={{textTransform:"capitalize"}}>
                                 {element.title}
                               </h3>
-                              {/* <p className="card-text">
-                                Ratings: {element.rating}/5
-                              </p> */}
                               <br />
                               <h4 className="card-text">
                                 $
